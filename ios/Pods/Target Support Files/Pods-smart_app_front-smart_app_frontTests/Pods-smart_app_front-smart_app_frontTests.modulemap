@@ -1,0 +1,6 @@
+module Pods_smart_app_front_smart_app_frontTests {
+  umbrella header "Pods-smart_app_front-smart_app_frontTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
