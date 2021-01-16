@@ -1,7 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="key" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ad29b49-18ae-49da-8a72-073d9f249e10" name="Default Changelist" comment="" />
+    <list default="true" id="1ad29b49-18ae-49da-8a72-073d9f249e10" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_2_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_2_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_2_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_fresco_drawee_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_fresco_fbcore_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_fresco_fresco_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_fresco_imagepipeline_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_fresco_imagepipeline_base_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_fresco_nativeimagefilters_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_fresco_nativeimagetranscoder_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kakao_sdk_auth_1_27_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kakao_sdk_common_1_27_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kakao_sdk_network_1_27_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kakao_sdk_usermgmt_1_27_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kakao_sdk_util_1_27_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/smart_app_front/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/smart_app_front/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../navigation/MainNavigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../navigation/MainNavigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screen/community/Community.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screen/community/Community.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screen/home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screen/home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screen/home/searchView/ResultView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screen/home/searchView/ResultView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +89,11 @@
       </state>
     </system>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1mRv8q862drgqw8ADlwaZFciUTz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,9 +101,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1609469087877" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1610593072563" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -44,7 +118,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -110,9 +184,44 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="929" y="352" key="com.intellij.ide.util.TipDialog" timestamp="1609469066034">
-      <screen x="0" y="23" width="2560" height="994" />
+    <state x="973" y="155" key="#app" timestamp="1609552136876">
+      <screen x="0" y="23" width="2560" height="988" />
     </state>
+    <state x="973" y="155" key="#app/2560.23.1792.1097/0.23.2560.988@0.23.2560.988" timestamp="1609552136876" />
+    <state width="1878" height="224" key="GridCell.Tab.0.bottom" timestamp="1610593137871">
+      <screen x="0" y="23" width="1920" height="997" />
+    </state>
+    <state width="1878" height="224" key="GridCell.Tab.0.bottom/0.23.1920.997/1920.-17.1792.1097@0.23.1920.997" timestamp="1610593137871" />
+    <state width="2518" height="267" key="GridCell.Tab.0.bottom/2560.23.1792.1097/0.23.2560.988@0.23.2560.988" timestamp="1609552375096" />
+    <state width="2518" height="267" key="GridCell.Tab.0.bottom/2560.23.1792.1097/0.23.2560.990@0.23.2560.990" timestamp="1609552380084" />
+    <state width="1878" height="224" key="GridCell.Tab.0.center" timestamp="1610593137870">
+      <screen x="0" y="23" width="1920" height="997" />
+    </state>
+    <state width="1878" height="224" key="GridCell.Tab.0.center/0.23.1920.997/1920.-17.1792.1097@0.23.1920.997" timestamp="1610593137870" />
+    <state width="2518" height="267" key="GridCell.Tab.0.center/2560.23.1792.1097/0.23.2560.988@0.23.2560.988" timestamp="1609552375095" />
+    <state width="2518" height="267" key="GridCell.Tab.0.center/2560.23.1792.1097/0.23.2560.990@0.23.2560.990" timestamp="1609552380084" />
+    <state width="1878" height="224" key="GridCell.Tab.0.left" timestamp="1610593137869">
+      <screen x="0" y="23" width="1920" height="997" />
+    </state>
+    <state width="1878" height="224" key="GridCell.Tab.0.left/0.23.1920.997/1920.-17.1792.1097@0.23.1920.997" timestamp="1610593137869" />
+    <state width="2518" height="267" key="GridCell.Tab.0.left/2560.23.1792.1097/0.23.2560.988@0.23.2560.988" timestamp="1609552375095" />
+    <state width="2518" height="267" key="GridCell.Tab.0.left/2560.23.1792.1097/0.23.2560.990@0.23.2560.990" timestamp="1609552380083" />
+    <state width="1878" height="224" key="GridCell.Tab.0.right" timestamp="1610593137870">
+      <screen x="0" y="23" width="1920" height="997" />
+    </state>
+    <state width="1878" height="224" key="GridCell.Tab.0.right/0.23.1920.997/1920.-17.1792.1097@0.23.1920.997" timestamp="1610593137870" />
+    <state width="2518" height="267" key="GridCell.Tab.0.right/2560.23.1792.1097/0.23.2560.988@0.23.2560.988" timestamp="1609552375096" />
+    <state width="2518" height="267" key="GridCell.Tab.0.right/2560.23.1792.1097/0.23.2560.990@0.23.2560.990" timestamp="1609552380084" />
+    <state x="878" y="217" key="NewModule_or_Project.wizard" timestamp="1609807899966">
+      <screen x="0" y="23" width="2560" height="986" />
+    </state>
+    <state x="878" y="217" key="NewModule_or_Project.wizard/2560.23.1792.1097/0.23.2560.986@0.23.2560.986" timestamp="1609807899966" />
+    <state x="697" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1610593056583">
+      <screen x="0" y="23" width="1920" height="997" />
+    </state>
+    <state x="697" y="353" key="com.intellij.ide.util.TipDialog/0.23.1920.997/1920.-17.1792.1097@0.23.1920.997" timestamp="1610593056583" />
+    <state x="929" y="349" key="com.intellij.ide.util.TipDialog/2560.23.1792.1097/0.23.2560.986@0.23.2560.986" timestamp="1609807883537" />
+    <state x="929" y="350" key="com.intellij.ide.util.TipDialog/2560.23.1792.1097/0.23.2560.988@0.23.2560.988" timestamp="1609552133267" />
     <state x="929" y="352" key="com.intellij.ide.util.TipDialog/2560.23.1792.1097/0.23.2560.994@0.23.2560.994" timestamp="1609469066034" />
   </component>
 </project>

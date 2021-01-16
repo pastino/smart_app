@@ -1,18 +1,50 @@
 import React, {FunctionComponent} from 'react';
 import {Text, View} from 'react-native';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 import styled from 'styled-components/native';
 import constants from '../styles/constants';
 import styles from '../styles/styles';
+import {useSelector, useDispatch} from 'react-redux';
+import {logOut} from '../../redux/usersSlice';
 
 interface Props {
   text: string;
   back?: boolean;
+  login?: boolean;
+  navigation?: any;
 }
 
-const Header: FunctionComponent<Props> = ({text, back = true}) => {
+const Header: FunctionComponent<Props> = ({
+  text,
+  back = true,
+  login = false,
+  navigation,
+}) => {
+  const {isLoggedIn} = useSelector((state) => state.usersReducer);
+  const dispatch = useDispatch();
   return (
     <Container>
       {!back ? <Title>{text}</Title> : <Title>{text}</Title>}
+      {login ? (
+        <View style={{position: 'absolute', right: 20, top: 15}}>
+          {isLoggedIn ? (
+            <TouchableOpacity
+              onPress={() => {
+                dispatch(logOut({}));
+              }}>
+              <Text style={{fontWeight: '700', color: styles.GRAY}}>
+                로그아웃
+              </Text>
+            </TouchableOpacity>
+          ) : (
+            <TouchableOpacity onPress={() => navigation.navigate('LoginView')}>
+              <Text style={{fontWeight: '700', color: styles.GRAY}}>
+                로그인
+              </Text>
+            </TouchableOpacity>
+          )}
+        </View>
+      ) : null}
     </Container>
   );
 };

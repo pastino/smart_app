@@ -6,8 +6,6 @@ import styles from '../../styles/styles';
 import SearchView from './searchView/SearchView';
 import {ToastAndroid} from 'react-native';
 import Spinner from 'react-native-loading-spinner-overlay';
-import dotenv from 'dotenv';
-dotenv.config();
 
 const Home = ({navigation}) => {
   const [businessName, setBusinessName] = useState('');
@@ -19,8 +17,8 @@ const Home = ({navigation}) => {
   const shoppinApi = axios.create({
     baseURL: 'https://openapi.naver.com/v1/',
     headers: {
-      'X-Naver-Client-Id': process.env.NAVER_CLIENT_ID,
-      'X-Naver-Client-Secret': process.env.NAVER_SECRET_KEY,
+      'X-Naver-Client-Id': 'A5SNMW0tRVBQVbHzFYVZ',
+      'X-Naver-Client-Secret': '4dehC2d7WP',
       'Content-Type': 'application/json',
     },
   });
