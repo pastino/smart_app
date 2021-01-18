@@ -46,7 +46,6 @@ const Home = ({navigation}) => {
         },
       });
       const itemArray = JSON.parse(response.request._response).items;
-      // console.log(itemArray);
       if (itemArray.length > 0) {
         data = [...data, ...itemArray];
         if (itemArray.length < 100) {

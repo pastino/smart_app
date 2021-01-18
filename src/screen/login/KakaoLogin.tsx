@@ -17,7 +17,7 @@ const KakaoLogin = ({navigation: {goBack}, setIsLoading}) => {
     await KakaoLogins.login([KAKAO_AUTH_TYPES.Talk, KAKAO_AUTH_TYPES.Account])
       .then(async (result) => {
         setIsLoading(true);
-        const token = result.accessToken;
+        // const token = result.accessToken;
         const profileResult: any = await getProfile();
         if (profileResult !== false) {
           const result = await loginUser({
@@ -30,7 +30,7 @@ const KakaoLogin = ({navigation: {goBack}, setIsLoading}) => {
             const data = result.data;
             dispatch(
               logIn({
-                token,
+                token: data.token,
                 user: data,
               }),
             );

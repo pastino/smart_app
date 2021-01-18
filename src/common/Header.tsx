@@ -1,30 +1,53 @@
 import React, {FunctionComponent} from 'react';
 import {Text, View} from 'react-native';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import {
+  TouchableOpacity,
+  TouchableWithoutFeedback,
+} from 'react-native-gesture-handler';
 import styled from 'styled-components/native';
 import constants from '../styles/constants';
 import styles from '../styles/styles';
 import {useSelector, useDispatch} from 'react-redux';
 import {logOut} from '../../redux/usersSlice';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 interface Props {
   text: string;
   back?: boolean;
   login?: boolean;
   navigation?: any;
+  goback?: any;
 }
 
 const Header: FunctionComponent<Props> = ({
   text,
-  back = true,
+  back = false,
   login = false,
   navigation,
+  goback,
 }) => {
-  const {isLoggedIn} = useSelector((state) => state.usersReducer);
+  const {isLoggedIn, token} = useSelector((state) => state.usersReducer);
+
   const dispatch = useDispatch();
+
   return (
     <Container>
-      {!back ? <Title>{text}</Title> : <Title>{text}</Title>}
+      {!back ? (
+        <Title>{text}</Title>
+      ) : (
+        <>
+          <TouchableWithoutFeedback
+            onPress={() => goback()}
+            containerStyle={{position: 'absolute', left: 15}}>
+            <MaterialIcons
+              name={'keyboard-arrow-left'}
+              size={40}
+              color={'black'}
+            />
+          </TouchableWithoutFeedback>
+          <Title>{text}</Title>
+        </>
+      )}
       {login ? (
         <View style={{position: 'absolute', right: 20, top: 15}}>
           {isLoggedIn ? (

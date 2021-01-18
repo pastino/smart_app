@@ -7,7 +7,6 @@ import Spinner from 'react-native-loading-spinner-overlay';
 
 const LoginView = ({navigation}) => {
   const [isLoading, setIsLoading] = useState(false);
-  console.log(isLoading);
   return (
     <View
       style={{

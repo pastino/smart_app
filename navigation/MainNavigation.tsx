@@ -6,6 +6,8 @@ import {
 import TabNavigation from './TabNavigation';
 import ResultView from '../src/screen/home/searchView/ResultView';
 import LoginView from '../src/screen/login/LoginView';
+import CreatePostView from '../src/screen/community/createPost/CreatePostView';
+import EditPostView from '../src/screen/community/editPost/EditPostView';
 
 const MainNavigation = () => {
   const Stack = createStackNavigator();
@@ -30,6 +32,16 @@ const MainNavigation = () => {
       <Stack.Screen
         name="LoginView"
         component={LoginView}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="CreatePostView"
+        component={CreatePostView}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="EditPostView"
+        component={EditPostView}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
