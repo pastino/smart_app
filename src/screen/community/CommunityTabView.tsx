@@ -1,10 +1,14 @@
 import React from 'react';
 import {ActivityIndicator, View} from 'react-native';
-import {ScrollView} from 'react-native-gesture-handler';
+import {
+  ScrollView,
+  TouchableWithoutFeedback,
+} from 'react-native-gesture-handler';
 import PostUser from './construction/PostUser';
 import PostText from './construction/PostText';
 import styles from '../../styles/styles';
 import {deletePost} from '../../../api';
+import PostCommnet from './construction/PostComment';
 import prettyFormat from 'pretty-format';
 
 const CommunityTabView = ({
@@ -16,22 +20,26 @@ const CommunityTabView = ({
   next,
   accountId,
   token,
+  deleteNum,
+  setDeleteNum,
 }) => {
   const deletePostHandle = async (postId) => {
     let deletedData;
     deletedData = data.filter((item) => item.id !== postId);
     setData(deletedData);
     const result = await deletePost(postId, token);
+    setDeleteNum(deleteNum + 1);
     if (result.status !== 204) {
       setData(data);
     }
   };
+
   const editDispatchHandle = (params: any) => {
     const editData = params.data;
     let changedData;
     const index = data.findIndex((item) => item.id === editData.id);
     const frontData = data.slice(0, index);
-    const endData = data.slice(index + 1, -1);
+    const endData = data.slice(index + 1, editData.length);
     changedData = [...frontData, editData, ...endData];
     setData(changedData);
   };
@@ -57,19 +65,29 @@ const CommunityTabView = ({
               borderBottomWidth: 1,
               borderBottomColor: styles.RIGHT_GRAY,
             }}>
-            <View style={{padding: 10, paddingBottom: 30}}>
-              <PostUser
-                navigation={navigation}
-                postId={item.id}
-                text={item.text}
-                created={item.created}
-                {...item.user}
-                accountId={accountId}
-                deletePostHandle={deletePostHandle}
-                tab={tab}
-                editDispatchHandle={editDispatchHandle}
-              />
-              <PostText {...item} />
+            <View style={{paddingTop: 10}}>
+              <View style={{paddingLeft: 10, paddingRight: 10}}>
+                <PostUser
+                  navigation={navigation}
+                  postId={item.id}
+                  text={item.text}
+                  created={item.created}
+                  {...item.user}
+                  accountId={accountId}
+                  deletePostHandle={deletePostHandle}
+                  tab={tab}
+                  editDispatchHandle={editDispatchHandle}
+                />
+                <TouchableWithoutFeedback
+                  onPress={() =>
+                    navigation.navigate('DetailView', {accountId, data: item})
+                  }>
+                  <PostText {...item} />
+                </TouchableWithoutFeedback>
+              </View>
+              <View style={{paddingTop: 20}}>
+                <PostCommnet data={item} navigation={navigation} />
+              </View>
             </View>
           </View>
         ))}

@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1003587930/@react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/1003587930/@react-native-community_async-storage.iml" group="smart_app_front/@react-native-community_async-storage" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="smart_app_front/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1003587930/react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/1003587930/react-native-community_async-storage.iml" group="smart_app_front/react-native-community_async-storage" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/348485335/react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/348485335/react-native-community_masked-view.iml" group="smart_app_front/react-native-community_masked-view" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1669118610/react-native-community_viewpager.iml" filepath="$PROJECT_DIR$/.idea/modules/-1669118610/react-native-community_viewpager.iml" group="smart_app_front/react-native-community_viewpager" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-798080544/react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-798080544/react-native-gesture-handler.iml" group="smart_app_front/react-native-gesture-handler" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1222998746/react-native-image-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/-1222998746/react-native-image-picker.iml" group="smart_app_front/react-native-image-picker" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1799855543/react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-1799855543/react-native-safe-area-context.iml" group="smart_app_front/react-native-safe-area-context" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1435280991/react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/-1435280991/react-native-screens.iml" group="smart_app_front/react-native-screens" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-744322726/react-native-seoul-kakao-login.iml" filepath="$PROJECT_DIR$/.idea/modules/-744322726/react-native-seoul-kakao-login.iml" group="smart_app_front/react-native-seoul-kakao-login" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-744322726/react-native-seoul_kakao-login.iml" filepath="$PROJECT_DIR$/.idea/modules/-744322726/react-native-seoul_kakao-login.iml" group="smart_app_front/react-native-seoul_kakao-login" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/402268662/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/402268662/react-native-vector-icons.iml" group="smart_app_front/react-native-vector-icons" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/smart_app_front.iml" filepath="$PROJECT_DIR$/.idea/modules/smart_app_front.iml" group="smart_app_front" />
     </modules>
   </component>
