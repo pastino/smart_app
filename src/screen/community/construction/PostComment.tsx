@@ -5,7 +5,9 @@ import styles from '../../../styles/styles';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {TouchableWithoutFeedback} from 'react-native-gesture-handler';
 
-const PostCommnet = ({navigation, data}) => {
+const PostCommnet = ({navigation, data, favPosts, toggleFavHandle}) => {
+  const isFav = data.is_fav;
+
   return (
     <View
       style={{
@@ -15,23 +17,27 @@ const PostCommnet = ({navigation, data}) => {
         borderTopWidth: 1,
         borderTopColor: styles.RIGHT_GRAY,
       }}>
-      <View
-        style={{
+      <TouchableWithoutFeedback
+        containerStyle={{
           width: constants.width / 2,
           justifyContent: 'center',
           alignItems: 'center',
-        }}>
-        {/* <MaterialCommunityIcons
-          name={'cards-heart'}
-          size={25}
-          color={styles.RED}
-        /> */}
-        <MaterialCommunityIcons
-          name={'heart-outline'}
-          size={25}
-          color={styles.GRAY}
-        />
-      </View>
+        }}
+        onPress={() => toggleFavHandle(data.id)}>
+        {favPosts.includes(data.id) ? (
+          <MaterialCommunityIcons
+            name={'cards-heart'}
+            size={25}
+            color={styles.RED}
+          />
+        ) : (
+          <MaterialCommunityIcons
+            name={'heart-outline'}
+            size={25}
+            color={styles.GRAY}
+          />
+        )}
+      </TouchableWithoutFeedback>
       <View
         style={{width: 1, backgroundColor: styles.RIGHT_GRAY, height: 50}}
       />

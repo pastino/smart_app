@@ -1,5 +1,5 @@
 import React from 'react';
-import {ActivityIndicator, View} from 'react-native';
+import {ActivityIndicator, Text, View} from 'react-native';
 import {
   ScrollView,
   TouchableWithoutFeedback,
@@ -9,7 +9,6 @@ import PostText from './construction/PostText';
 import styles from '../../styles/styles';
 import {deletePost} from '../../../api';
 import PostCommnet from './construction/PostComment';
-import prettyFormat from 'pretty-format';
 
 const CommunityTabView = ({
   navigation,
@@ -22,6 +21,8 @@ const CommunityTabView = ({
   token,
   deleteNum,
   setDeleteNum,
+  favPosts,
+  toggleFavHandle,
 }) => {
   const deletePostHandle = async (postId) => {
     let deletedData;
@@ -83,10 +84,22 @@ const CommunityTabView = ({
                     navigation.navigate('DetailView', {accountId, data: item})
                   }>
                   <PostText {...item} />
+                  <View style={{marginTop: 20, flexDirection: 'row'}}>
+                    <Text style={{color: styles.GRAY, fontSize: 13}}>댓글</Text>
+                    <Text
+                      style={{color: styles.GRAY, fontSize: 13, marginLeft: 5}}>
+                      {item.total_comments_num}
+                    </Text>
+                  </View>
                 </TouchableWithoutFeedback>
               </View>
               <View style={{paddingTop: 20}}>
-                <PostCommnet data={item} navigation={navigation} />
+                <PostCommnet
+                  data={item}
+                  navigation={navigation}
+                  favPosts={favPosts}
+                  toggleFavHandle={toggleFavHandle}
+                />
               </View>
             </View>
           </View>

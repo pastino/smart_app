@@ -63,13 +63,13 @@ const Home = ({navigation}) => {
       ToastAndroid.showWithGravity(
         '키워드를 입력해주세요.',
         ToastAndroid.SHORT,
-        ToastAndroid.CENTER,
+        ToastAndroid.BOTTOM,
       );
     } else if (businessName === '') {
       ToastAndroid.showWithGravity(
         '상호명을 입력해주세요.',
         ToastAndroid.SHORT,
-        ToastAndroid.CENTER,
+        ToastAndroid.BOTTOM,
       );
     } else {
       setIsLoading(true);

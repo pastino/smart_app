@@ -64,6 +64,7 @@ const CreatePostView = ({navigation, navigation: {goBack}, route}) => {
     } else {
       try {
         setIsLoading(true);
+        console.log(value, type, token);
         const result = await createPost({text: value, type}, token);
         setIsLoading(false);
         route.params.createDispatchHandle({tab, data: result.data});

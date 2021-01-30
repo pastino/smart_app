@@ -30,7 +30,6 @@ const DetailUser = ({
   let dateBefore;
   const today = new Date();
   const createdDate = new Date(created);
-  console.log(created);
   const day = Math.round(
     (today.getTime() - createdDate.getTime()) / 1000 / 60 / 60 / 24,
   );

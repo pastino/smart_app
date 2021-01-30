@@ -12,12 +12,17 @@ import Header from '../../common/Header';
 import {useSelector} from 'react-redux';
 import styles from '../../styles/styles';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import {getPosts} from '../../../api';
+import {getFavPosts, getPosts, toggleFavPost} from '../../../api';
 import Spinner from 'react-native-loading-spinner-overlay';
 
 const Community = ({navigation}) => {
   const {isLoggedIn, token, user} = useSelector((state) => state.usersReducer);
+
   const accountId = user?.account_id;
+  const userId = user?.id;
+
+  const [favPosts, setFavPosts] = useState<any>([]);
+
   const [currentPage, setCurrentPage] = useState(0);
 
   const communityTabs = ['블로그', '스마트 스토어', '스마트 플레이스'];
@@ -45,11 +50,28 @@ const Community = ({navigation}) => {
 
   const [isLoading, setIsLoading] = useState(false);
 
+  const toggleFavHandle = async (postId) => {
+    if (favPosts.includes(postId)) {
+      setFavPosts(favPosts.filter((id) => id !== postId));
+    } else {
+      setFavPosts([...favPosts, postId]);
+    }
+    await toggleFavPost(userId, postId, token);
+  };
+
+  const getFavPostsHandle = async () => {
+    const response = await getFavPosts(userId, token);
+    if (response.status === 200) {
+      setFavPosts(response.data.map((post) => post.id));
+    }
+  };
+
   const getBlogPostsHandle = async () => {
     setIsLoading(true);
     const results = await getPosts('blog', blogPage);
     if (results.status === 200) {
       const data = results.data;
+
       if (data.next === null) {
         setBlogNext(false);
       }
@@ -59,7 +81,6 @@ const Community = ({navigation}) => {
   };
 
   const getMoreBlogPosts = async () => {
-    console.log(blogDifferenceNum);
     if (blogDifferenceNum >= 0) {
       try {
         const results = await getPosts('blog', blogPage + 1);
@@ -281,6 +302,7 @@ const Community = ({navigation}) => {
   };
 
   useEffect(() => {
+    getFavPostsHandle();
     getBlogPostsHandle();
     getStorePostsHandle();
     getPlacePostsHandle();
@@ -356,6 +378,8 @@ const Community = ({navigation}) => {
                   ? setPlaceDeleteNum
                   : null
               }
+              favPosts={favPosts}
+              toggleFavHandle={toggleFavHandle}
             />
           ))}
         </ScrollableTabView>

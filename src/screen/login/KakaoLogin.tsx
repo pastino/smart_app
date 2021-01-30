@@ -26,17 +26,18 @@ const KakaoLogin = ({navigation: {goBack}, setIsLoading}) => {
             login_method: 'kakao',
           });
           const access = result.status;
-
           if (access === 200) {
             const data = result.data;
             console.log(data.token);
-            dispatch(
-              logIn({
-                token: data.token,
-                user: data,
-              }),
-            );
-            goBack();
+            if (data.token) {
+              dispatch(
+                logIn({
+                  token: data.token,
+                  user: data,
+                }),
+              );
+              goBack();
+            }
           }
         }
       })

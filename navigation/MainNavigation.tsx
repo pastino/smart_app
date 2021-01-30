@@ -9,6 +9,7 @@ import LoginView from '../src/screen/login/LoginView';
 import CreatePostView from '../src/screen/community/createPost/CreatePostView';
 import EditPostView from '../src/screen/community/editPost/EditPostView';
 import DetailView from '../src/screen/community/detailView/DetailView';
+import EditComment from '../src/screen/community/detailView/comment/EditComment';
 
 const MainNavigation = () => {
   const Stack = createStackNavigator();
@@ -48,6 +49,11 @@ const MainNavigation = () => {
       <Stack.Screen
         name="DetailView"
         component={DetailView}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="EditComment"
+        component={EditComment}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

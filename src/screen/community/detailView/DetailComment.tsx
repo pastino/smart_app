@@ -11,9 +11,17 @@ import {
   MenuTrigger,
 } from 'react-native-popup-menu';
 import ModalComponent from '../../../common/ModalComponent';
-import {delteComment} from '../../../../api';
 
-const DetailComment = ({created, id, post, text, user}) => {
+const DetailComment = ({
+  navigation,
+  created,
+  id,
+  post,
+  text,
+  user,
+  deleteCommentHandle,
+  editDispatchHandle,
+}) => {
   const {isLoggedIn, token, user: myUser} = useSelector(
     (state) => state.usersReducer,
   );
@@ -42,11 +50,6 @@ const DetailComment = ({created, id, post, text, user}) => {
       : time === 0
       ? `${minute}분 전`
       : `${time}시간 전`;
-
-  const deleteCommentHandle = async () => {
-    const response = await delteComment(id, token);
-    console.log(response);
-  };
 
   return (
     <View>
@@ -107,13 +110,13 @@ const DetailComment = ({created, id, post, text, user}) => {
                 }}>
                 <MenuOption
                   onSelect={() => {
-                    console.log('edit');
-                    // navigation.navigate('EditPostView', {
-                    //   tab,
-                    //   text,
-                    //   postId,
-                    //   editDispatchHandle,
-                    // });
+                    navigation.navigate('EditComment', {
+                      id,
+                      text,
+                      myUser,
+                      post,
+                      editDispatchHandle,
+                    });
                   }}
                   style={{paddingTop: 15, paddingBottom: 15}}>
                   <Text style={{color: 'black', fontSize: 15}}>수정하기</Text>
@@ -137,7 +140,7 @@ const DetailComment = ({created, id, post, text, user}) => {
         visible={deleteModal}
         setVisible={setDeleteModal}
         height={170}
-        confirmHandle={() => deleteCommentHandle()}>
+        confirmHandle={() => deleteCommentHandle(id)}>
         <Text style={{fontWeight: '700'}}>정말로 삭제하시겠습니까?</Text>
       </ModalComponent>
     </View>

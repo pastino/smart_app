@@ -17,8 +17,12 @@ const callApi = async (
       'Content-Type': 'application/json',
     };
   }
-  const baseUrl = 'http://48d176a2eb46.ngrok.io/api/v1';
+
+  const baseUrl = __DEV__
+    ? 'http://smart-app.eba-qfgvtjph.ap-northeast-2.elasticbeanstalk.com/api/v1'
+    : 'http://smart-app.eba-qfgvtjph.ap-northeast-2.elasticbeanstalk.com/api/v1';
   const fullUrl = `${baseUrl}${path}`;
+  console.log(data);
   if (method === 'get' || method === 'delete') {
     return axios[method](fullUrl, {headers, params});
   } else {
@@ -36,5 +40,13 @@ export const editPost = (id, form, jwt) =>
   callApi('put', `/posts/${id}/`, form, jwt);
 export const getComments = (postId) =>
   callApi('get', '/comments/search/', null, null, {post_id: postId});
+export const createComment = (form, jwt) =>
+  callApi('post', '/comments/', form, jwt, null);
 export const delteComment = (commentId, jwt) =>
   callApi('delete', `/comments/${commentId}/`, null, jwt, null);
+export const editComment = (id, form, jwt) =>
+  callApi('put', `/comments/${id}/`, form, jwt, null);
+export const getFavPosts = (userId, jwt) =>
+  callApi('get', `/users/${userId}/favs/`, null, jwt, null);
+export const toggleFavPost = (userId, postId, jwt) =>
+  callApi('put', `/users/${userId}/favs/`, {pk: postId}, jwt, null);
